@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>My Pet</title>
+</head>
+
+<body class="toddy_home">
+    <div class="container flex">
+        <article class="flex">
+            <div class="mainImg">
+                <figure>
+                    <img src="assets/img/toddy.jpg" alt="">
+                </figure>
+            </div>
+            <div class="main_content">
+                <header>
+                    <h1>Gandalf the Toddy Cat</h1>
+                </header>
+                <section>
+                    <h2>Info</h2>
+                    <p>
+                        The Asian palm civet (Paradoxurus hermaphroditus), also called the toddy cat, is a small member of the family Viverridae
+                        native to South and Southeast Asia. Since 2008, it is IUCN Red Listed as Least Concern as it is tolerant
+                        of a broad range of habitats. It is widely distributed with large populations that in 2008 were thought
+                        unlikely to be declining.[2] In 2012, it was suggested that recent increases in capturing the animals
+                        for Kopi Luwak (Civet Coffee) production may constitute a significant threat to wild palm civet populations.[3]
+                    </p>
+                </section>
+                <section>
+                    <h2>Characteristics</h2>
+                    <p>The Asian palm civet is a small, mottled gray and black viverrid weighing 2 to 5 kg (4.4 to 11.0 lb).
+                        It has a body length of about 53 cm (21 in) with a 48 cm (19 in) long tail. Its long, stocky body
+                        is covered with coarse, shaggy hair that is usually greyish in color. There is a white mask across
+                        the forehead, a small white patch under each eye, a white spot on each side of the nostrils, and
+                        a narrow dark line between the eyes. The muzzle, ears, lower legs, and distal half of the tail are
+                        black, with three rows of black markings on the body. The tail is without rings, unlike in similar
+                        civet species. Anal scent glands emit a nauseating secretion as a chemical defense when threatened
+                        or upset.[4] Despite its species name hermaphroditus, the civets (like all other mammals) have two
+                        distinct sexes and are not hermaphrodites.</p>
+                </section>
+                <section>
+                    <h2>Distribution and habitat</h2>
+                    <p>
+                        The Asian palm civet is native to India, Nepal, Bangladesh, Bhutan, Myanmar, Sri Lanka, Thailand, Singapore, Peninsular Malaysia,
+                        Sabah, Sarawak, Brunei Darussalam, Laos, Cambodia, Vietnam, China, the Philippines, and the Indonesian
+                        islands of Sumatra, Java, Kalimantan, Bawean and Siberut. It was introduced to Irian Jaya, the Lesser
+                        Sunda Islands, Maluku, Sulawesi and Japan. Its presence in Papua New Guinea is uncertain.[2] It usually
+                        inhabits primary forests, but also occurs at lower densities in secondary and selectively logged
+                        forest.[5] It is also present in parks and suburban gardens with mature fruit trees, fig trees and
+                        undisturbed vegetation. Its sharp claws allow climbing of trees and house gutters. In most parts
+                        of Sri Lanka, palm civets are considered a nuisance since they litter in ceilings and attics of common
+                        households, and make loud noises fighting and moving about at night.
+                    </p>
+                </section>
+                <button id="readMoreBtn" onclick="showMoreToggle(this ,'.main_content')"><span>Read More</span></button>
+            </div>
+        </article>
+        <aside class="flex">
+            <h2>More Stuff</h2>
+            <ul>
+                <li class="flex">
+                    <a class="flex" href="">
+                        <img src="assets/img/midGiraffe.jpg" alt="">
+                        <span>Sami G</span>
+                    </a>
+                </li>
+                <li class="flex">
+                    <a class="flex" href="">
+                        <img src="assets/img/sadrick.jpg" alt="">
+                        <span>Sad-rick</span>
+                    </a>
+                </li>
+                <li class="flex">
+                    <a class="flex" href="">
+                        <img src="assets/img/bigNeil.jpg" alt="">
+                        <span>Big Neil</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+    </div>
+    <script>
+
+        var showMoreToggle = function (e , content) {
+            var el = document.querySelector(content);
+
+            if (el.classList.contains('show')) {
+                el.classList.remove('show');
+               e.innerHTML = "<span>Read More</span>"
+            } else {
+                el.classList.add('show');
+                e.innerHTML = "<span>Show Less</span>"
+            }
+        }
+
+    </script>
+</body>
+
+</html>
