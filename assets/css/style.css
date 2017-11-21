@@ -38,7 +38,7 @@ ul{
 .toddy_home .mainImg ::after{
 	content:"";
 	width:240px;
-	height:698px;
+	height:calc(100vh - 40px);
 	position:absolute;
 	border:3px solid #e1e1ff;
 	top:30px;
