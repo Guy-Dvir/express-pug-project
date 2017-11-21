@@ -22,7 +22,7 @@ ul{
     max-width:calc(1200px - var(--main_padding));
     flex-wrap:wrap;
     margin:0 auto;
-    justify-content:center;
+    justify-content:flex-start;
     font-family: 'Quicksand', sans-serif;
 }
 
